@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="src/test.css" />
+  </head>
+  <body>
+    <section id="header">
+      <a href="#"><img src="images/logo.png" class="logo" alt="" /></a>
+      <div>
+        <ul class="navbar">
+          <li><a href="index.html">Product</a></li>
+          <li><a href="">Account</a></li>
+          <li>
+            <!-- cart icon -->
+            <div class="toggle-container">
+              <button class="toggle-cart">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <span class="cart-item-count">1</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="cart-overlay">
+      <aside class="cart">
+        <button class="cart-close">
+          <i class="fas fa-times"></i>
+        </button>
+        <header>
+          <h3 class="text-slanted">your bag</h3>
+        </header>
+        <!-- cart items -->
+        <div class="cart-items"></div>
+        <!-- footer -->
+        <footer>
+          <h3 class="cart-total text-slanted">total : $12.99</h3>
+          <button class="cart-checkout btn">checkout</button>
+        </footer>
+      </aside>
+    </div>
+
+    <!-- Sidebar -->
+    <script src="src/test.js"></script>
+  </body>
+</html>
